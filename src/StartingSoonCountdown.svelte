@@ -15,7 +15,7 @@
   };
 
   $: {
-    setTimeout(() => (showArrow = true), 2000);
+    setTimeout(() => (showArrow = true), 4000);
   }
 </script>
 
@@ -76,8 +76,11 @@
     }
   }
   main {
+    opacity: 0;
     width: 100vw;
     height: 100vh;
     animation: show 0.25s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
   }
 </style>
