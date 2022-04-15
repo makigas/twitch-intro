@@ -10,9 +10,9 @@
 </script>
 
 <Window
-  x="30%"
+  x="20%"
   y="60"
-  width="40%"
+  width="60%"
   height="240"
   title="El stream está iniciando"
 >

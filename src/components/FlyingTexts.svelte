@@ -7,6 +7,12 @@
     "Desfragmentando un kiwi...",
     "Actualizando el entorno gráfico...",
     "Acariciando patos...",
+
+    // @ckmu32
+    "Preparando el nuevo año de Java en YouTube... -- @ckmu32",
+
+    // @messer199
+    "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
   ];
 
   const NEXTS = {

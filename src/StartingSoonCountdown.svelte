@@ -1,5 +1,6 @@
 <script>
 	import Desktop from './Desktop.svelte';
+	import RandomMessages from './windows/RandomMessages.svelte';
 	import StreamStarting from './windows/StreamStarting.svelte';
 </script>
 
@@ -7,6 +8,7 @@
 	<svg width="100%" height="100%" viewBox="0 0 960 540">
 		<Desktop width="100%" height="100%" background="#8ac6cb">
 			<StreamStarting />
+			<RandomMessages />
 		</Desktop>
 	</svg>
 </main>

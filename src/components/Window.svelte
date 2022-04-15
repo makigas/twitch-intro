@@ -1,15 +1,17 @@
 <script>
-  export let x, y, width, height;
+  export let hide, x, y, width, height;
   export let title;
   let ready = false;
+
+  let uniqueID = Date.now() + "" + Math.random()
 </script>
 
-<svg on:animationend={() => ready = true} class="window" {width} {height} {x} {y}>
-  <mask id="windowMask">
+<svg on:animationend={() => ready = true} class={`window ${hide ? " hide" : ""}`} {width} {height} {x} {y}>
+  <mask id={`${uniqueID}_mask`}>
     <rect x="0" y="0" width="100%" height="100%" fill="black" />
     <rect x="0" y="0" width="100%" height="100%" rx="8" ry="8" fill="white" />
   </mask>
-  <g mask="url(#windowMask)">
+  <g mask="{`url(#${uniqueID}_mask)`}">
       <rect height="100%" width="100%" fill="white" />
       <svg class="mainHost" width="100%" height="100%" x="0" y="0">
       {#if ready}
@@ -46,6 +48,17 @@
         }
     }
 
+    @keyframes hide {
+        from {
+            opacity: 1;
+            transform: translateX(0) translateY(0) scale(1);
+        }
+        to {
+            opacity: 0;
+            transform: translateX(25%) translateY(25%) scale(0.5);
+        }
+    }
+
   .titleText {
     dominant-baseline: central;
     text-anchor: middle;
@@ -61,6 +74,11 @@
     -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.7));
 
     animation: enter 0.25s ease-out;
+  }
+
+  .hide {
+      animation: hide 0.25s ease-in;
+      animation-fill-mode: forwards;
   }
 
   .closeButtonContainer {
