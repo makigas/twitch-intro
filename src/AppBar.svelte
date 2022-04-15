@@ -25,9 +25,9 @@
     </text>
     <g class="symbolics">
         <g class="symbolicsInner" transform="translate(-75,0)">
-            <image href="/adwaita/network-wireless-symbolic.svg" fill="white" x="0" width="15" height="15" />
-        <image href="/adwaita/audio-volume-high-symbolic.svg" fill="white" x="25" width="15" height="15" />
-        <image href="/adwaita/system-shutdown-symbolic.svg" fill="white"  x="50" width="15" height="15" />
+            <image href="adwaita/network-wireless-symbolic.svg" fill="white" x="0" width="15" height="15" />
+        <image href="adwaita/audio-volume-high-symbolic.svg" fill="white" x="25" width="15" height="15" />
+        <image href="adwaita/system-shutdown-symbolic.svg" fill="white"  x="50" width="15" height="15" />
         </g>
 
     </g>

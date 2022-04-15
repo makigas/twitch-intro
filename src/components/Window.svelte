@@ -25,7 +25,7 @@
             height="20"
             x="-30"
             y="10"
-            href="/adwaita/cross-symbolic.svg"
+            href="adwaita/cross-symbolic.svg"
             />
         </g>
         <line x1="0" y1="40" x2="100%" y2="40" stroke="#00000030" stroke-width="0.5" />
