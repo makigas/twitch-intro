@@ -1,109 +1,48 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
+# IntroTwitch
 
-*Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+Esta es la nueva animación que voy a estar usando para mis directos.
+La intro está desarrollada en Svelte y CSS y se muestra en los streams usando
+un BrowserSource de OBS. Así que sí, la intro de mi Twitch es otro Electron...
 
----
+El estilo artístico de la intro recrea un escritorio falso (obviamente tenía
+que ser GNOME), donde una ventana va mostrando la cuenta atrás y de vez en
+cuando otras ventanas van apareciendo con memes y otras partes del lore del
+canal.
 
-# svelte app
+## Arquitectura técnica
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Esta intro es una oda a los SVG anidados. Los elementos que hay dentro de un
+SVG se posicionan y se dimensionan respecto al tamaño del SVG en el que están
+metidos. Aunque es posible usar transform() para trasladar y escalar un SVG,
+a veces no queda otra que usar un SVG dentro de otro para poder tener un control
+más preciso...
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+Los componentes de Svelte generan nodos SVG ya que toda la animación está
+contenida dentro de un SVG gigante, aunque enriquecida gracias a CSS y animada
+gracias a JavaScript y CSS Animations.
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+El SVG gigante está en StartingSoonComponent y también tiene el viewbox
+principal. Toda la animación se escala vectorialmente a 960x540, pero cuando
+se muestre esto en el OBS hay que usar como dimensiones de la BrowserSource
+la resolución del vídeo para que se vea nítido. (Por ejemplo, 1920x1080).
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+En la carpeta `src/components` están los componentes reusables:
 
+- Countdown: muestra una cuenta atrás en un nodo de texto gigante.
+- FlyingText: es una pieza de texto volador y animada, usada para los mensajes
+  de carga.
+- FlyingTexts: es el driver que va alternando nodos FlyingText aleatoriamente
+  con mensajes del pool de mensajes.
+- Progress: es una barra de progreso al estilo GTK/Adwaita.
+- Window: es una ventana al estilo GTK.
 
-## Get started
+En la carpeta `src/windows` están las distintas ventanas, algunas reusables
+y otras no.
 
-Install the dependencies...
+- StreamStarting: es la ventana que muestra la cuenta atrás.
 
-```bash
-cd svelte-app
-npm install
-```
+## Cómo proponer frases
 
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+Recoge puntos estando en mis streams y usa los puntos de canal para pedir
+frases. **Pull requests que traten de proponer nuevas frases van a ser
+cerrados**.

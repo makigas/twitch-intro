@@ -2,12 +2,16 @@ html, body {
 	position: relative;
 	width: 100%;
 	height: 100%;
+
+	--title-bar-background: #ddd9d6;
+	--title-bar-foreground: #2e3436;
 }
 
 body {
-	color: #333;
+	background: black;
+	color: white;
 	margin: 0;
-	padding: 8px;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
