@@ -29,6 +29,12 @@
     <slot />
   </Window>
   {#if showArrow}
-    <FlyingArrow from="translateX(500%) translateY(100%)" to="translateX(-100%) translateY(400%)" on:animationstep={hideWindow} x="820" y="260" />
+    <FlyingArrow
+      from="translateX(500%) translateY(100%)"
+      to="translateX(-100%) translateY(400%)"
+      on:animationstep={hideWindow}
+      x="820"
+      y="260"
+    />
   {/if}
 </g>

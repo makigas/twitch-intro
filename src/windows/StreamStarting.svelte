@@ -25,18 +25,19 @@
       text-anchor="middle"
       font-weight="300"
       fill="black"
-      font-size="2em">Empezamos ya</text>
+      font-size="2em">Empezamos ya</text
+    >
   {:else}
     <Countdown {duration} x="50%" y="35%" />
-        <text
-        x="50%"
-        y="55%"
-        dominant-baseline="central"
-        text-anchor="middle"
-        font-weight="bold"
-        font-size="1.2em"
+    <text
+      x="50%"
+      y="55%"
+      dominant-baseline="central"
+      text-anchor="middle"
+      font-weight="bold"
+      font-size="1.2em"
     >
-        Desplegando stream...
+      Desplegando stream...
     </text>
   {/if}
   <Progress

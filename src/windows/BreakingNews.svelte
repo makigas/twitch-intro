@@ -27,9 +27,13 @@
     font-weight="bold"
     font-size="1.2em"
     dominant-baseline="middle"
-    text-anchor="left">Las noticias del día:</text>
+    text-anchor="left">Las noticias del día:</text
+  >
   <foreignObject fill="black" x="150" y="125" width="600" height="100">
-    <div style="color: black; font-size: 1.1em;" xmlns="http://www.w3.org/1999/xhtml">
+    <div
+      style="color: black; font-size: 1.1em;"
+      xmlns="http://www.w3.org/1999/xhtml"
+    >
       <slot />
       <p style="font-weight: 300;">Informa: {author}</p>
     </div>

@@ -33,5 +33,7 @@
 >
 
 <style>
-    .countdown { font-variant-numeric: tabular-nums; }
+  .countdown {
+    font-variant-numeric: tabular-nums;
+  }
 </style>

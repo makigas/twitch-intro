@@ -16,9 +16,9 @@
   ];
 
   const NEXTS = {
-      "enter": "normal",
-      "normal": "gone",
-      "gone": "enter",
+    enter: "normal",
+    normal: "gone",
+    gone: "enter",
   };
 
   let currentMessage = "";
@@ -28,16 +28,16 @@
     const random = Math.floor(Math.random() * messages.length);
     currentMessage = messages[random];
     state = "enter";
-  }
+  };
 
   const iterate = () => {
-      const next = NEXTS[state];
-      state = next;
+    const next = NEXTS[state];
+    state = next;
 
-      if (state == "gone") {
-          setTimeout(pickSentence, 1000);
-      }
-  }
+    if (state == "gone") {
+      setTimeout(pickSentence, 1000);
+    }
+  };
 
   $: {
     setTimeout(() => pickSentence(), 5000);
