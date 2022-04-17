@@ -4,7 +4,7 @@
   import Progress from "../components/Progress.svelte";
   import FlyingTexts from "../components/FlyingTexts.svelte";
 
-  let duration = 300;
+  let duration = 480;
 
   let countdownDone = false;
 </script>
