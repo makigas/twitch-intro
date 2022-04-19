@@ -1,35 +1,24 @@
 <script>
   import BreakingNews from "./BreakingNews.svelte";
   import ChatBubble from "./ChatBubble.svelte";
+  import { POPUPS, SECONDS_BETWEEN_POPUPS } from "../constants";
 
-  let news = [
-    {
-      text: "Expertos en ciberseguridad recomiendan usar Emacs y Nano hasta nuevo aviso por vulnerabilidad encontrada en Vim",
-      author: "@messer199",
-      kind: "BreakingNews",
-      id: "use-emacs",
-    },
-    {
-      text: "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
-      author: "@frostqui",
-      kind: "ChatBubble",
-      id: "eeeeeeeeeee",
-    },
-  ];
+  const popups = [...POPUPS];
+
   let current = null;
 
   const trigger = () => {
-    if (news.length === 0) {
+    if (POPUPS.length === 0) {
       return;
     }
-    const pick = news[Math.floor(Math.random() * news.length)];
+    const pick = popups[Math.floor(Math.random() * popups.length)];
     current = pick;
-    news = news.filter((n) => n.id !== pick.id);
+    popups = popups.filter((n) => n.id !== pick.id);
   };
 
   const next = () => {
     current = null;
-    setTimeout(trigger, 90000); // reduce this as more messages are added
+    setTimeout(trigger, SECONDS_BETWEEN_POPUPS * 1000); // reduce this as more messages are added
   };
 
   next();

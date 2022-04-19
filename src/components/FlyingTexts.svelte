@@ -1,22 +1,6 @@
 <script>
+  import { STATUSES } from "../constants";
   import FlyingText from "./FlyingText.svelte";
-
-  let messages = [
-    "Montando el disco duro de los memes...",
-    "Sacando brillo a los teclados...",
-    "Desfragmentando un kiwi...",
-    "Actualizando el entorno gráfico...",
-    "Acariciando patos...",
-
-    // @ckmu32
-    "Preparando el nuevo año de Java en YouTube... -- @ckmu32",
-
-    // @messer199
-    "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
-    
-    // @frostqui
-    "Reparando el condensador de fluzo",
-  ];
 
   const NEXTS = {
     enter: "normal",
@@ -28,8 +12,8 @@
   let state = "gone";
 
   const pickSentence = () => {
-    const random = Math.floor(Math.random() * messages.length);
-    currentMessage = messages[random];
+    const random = Math.floor(Math.random() * STATUSES.length);
+    currentMessage = STATUSES[random];
     state = "enter";
   };
 

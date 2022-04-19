@@ -3,8 +3,9 @@
   import Window from "../components/Window.svelte";
   import Progress from "../components/Progress.svelte";
   import FlyingTexts from "../components/FlyingTexts.svelte";
+  import { COUNTDOWN_MINUTES } from "../constants";
 
-  let duration = 480;
+  let duration = COUNTDOWN_MINUTES * 60;
 
   let countdownDone = false;
 </script>
