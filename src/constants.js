@@ -6,6 +6,9 @@ export const STATUSES = [
   "Actualizando el entorno gráfico...",
   "Acariciando patos...",
 
+  // @dannywolfx2
+  "BAD SECTOR -- @dannywolfmx2",
+
   // @ckmu32
   "Preparando el nuevo año de Java en YouTube... -- @ckmu32",
 
@@ -13,7 +16,7 @@ export const STATUSES = [
   "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
 
   // @frostqui
-  "Reparando el condensador de fluzo",
+  "Reparando el condensador de fluzo -- @frostqui",
 ];
 
 export const POPUPS = [
@@ -30,10 +33,15 @@ export const POPUPS = [
     id: "eeeeeeeeeee",
   },
   {
-      text: "El tiempo es como el dinero, mientras menos se tiene más se valora",
-      author: "@dannywolfmx2",
-      kind: "ChatBubble",
-      id: "tiempotiempo",
+    text: "El tiempo es como el dinero, mientras menos se tiene más se valora",
+    author: "@dannywolfmx2",
+    kind: "ChatBubble",
+    id: "tiempotiempo",
+  },
+  {
+    // Custom designed, doesn't need additional parameters
+    kind: "BoardPopup",
+    id: "motherboards",
   },
 ];
 

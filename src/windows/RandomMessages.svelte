@@ -1,9 +1,10 @@
 <script>
   import BreakingNews from "./BreakingNews.svelte";
   import ChatBubble from "./ChatBubble.svelte";
+  import BoardPopup from "./BoardPopup.svelte";
   import { POPUPS, SECONDS_BETWEEN_POPUPS } from "../constants";
 
-  const popups = [...POPUPS];
+  let popups = [...POPUPS];
 
   let current = null;
 
@@ -34,6 +35,8 @@
       <ChatBubble on:done={next} author={current.author}
         >{current.text}</ChatBubble
       >
+    {:else if current.kind === "BoardPopup"}
+      <BoardPopup on:done={next} />
     {/if}
   {/if}
 </g>
