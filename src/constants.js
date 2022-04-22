@@ -8,6 +8,9 @@ export const STATUSES = [
 
   // @dannywolfx2
   "BAD SECTOR -- @dannywolfmx2",
+  
+  // @ikanian
+  "Almacenando patos de emergencia... -- @ikanian",
 
   // @ckmu32
   "Preparando el nuevo año de Java en YouTube... -- @ckmu32",
@@ -16,7 +19,7 @@ export const STATUSES = [
   "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
 
   // @frostqui
-  "Reparando el condensador de fluzo -- @frostqui",
+  "Reparando el condensador de fluzo... -- @frostqui",
 ];
 
 export const POPUPS = [
