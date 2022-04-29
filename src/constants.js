@@ -30,6 +30,12 @@ export const POPUPS = [
     id: "use-emacs",
   },
   {
+    text: "lerna.js ha muerto",
+    author: "@frostqui",
+    kind: "BreakingNews",
+    id: "lerna-ded",
+  },
+  {
     text: "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
     author: "@frostqui",
     kind: "ChatBubble",
