@@ -20,6 +20,10 @@ export const STATUSES = [
 
   // @frostqui
   "Reparando el condensador de fluzo... -- @frostqui",
+  "Liberando a clank del mundo de las tinieblas... -- @frostqui",
+  
+  // @ivan_the_raging_python
+  "Huyendo de LatAm... -- @ivan_the_raging_python",
 ];
 
 export const POPUPS = [
