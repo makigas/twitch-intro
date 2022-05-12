@@ -8,6 +8,7 @@ export const STATUSES = [
 
   // @dannywolfx2
   "BAD SECTOR -- @dannywolfmx2",
+  "Sacando a pasear al lobete... -- @dannywolfmx2",
   
   // @ikanian
   "Almacenando patos de emergencia... -- @ikanian",
