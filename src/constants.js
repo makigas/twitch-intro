@@ -9,7 +9,7 @@ export const STATUSES = [
   // @dannywolfx2
   "BAD SECTOR -- @dannywolfmx2",
   "Sacando a pasear al lobete... -- @dannywolfmx2",
-  "Recargándole las pilas a pinchito... -- @dannywolfmx2",
+  "Recargándole las pilas a Pinchito... -- @dannywolfmx2",
   
   // @ikanian
   "Almacenando patos de emergencia... -- @ikanian",
@@ -23,6 +23,7 @@ export const STATUSES = [
   // @frostqui
   "Reparando el condensador de fluzo... -- @frostqui",
   "Liberando a clank del mundo de las tinieblas... -- @frostqui",
+  "Preparando la música de m****a sin copyright... -- @frostqui",
   
   // @ivan_the_raging_python
   "Huyendo de LatAm... -- @ivan_the_raging_python",
