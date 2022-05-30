@@ -55,12 +55,18 @@ export const POPUPS = [
     id: "tiempotiempo",
   },
   {
+    text: "Buenas gracias y muchas tardes. Espero esteis estupendos y estupendas, y si no, no pasa nada, es mejor eso que morirse.",
+    author: "@MrTioTizo",
+    kind: "ChatBubble",
+    kid: "buenasgracias",
+  },
+  {
     // Custom designed, doesn't need additional parameters
     kind: "BoardPopup",
     id: "motherboards",
   },
 ];
 
-export const SECONDS_BETWEEN_POPUPS = 90;
+export const SECONDS_BETWEEN_POPUPS = 70;
 
 export const COUNTDOWN_MINUTES = 8;
