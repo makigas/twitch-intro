@@ -58,7 +58,7 @@ export const POPUPS = [
     text: "Buenas gracias y muchas tardes. Espero esteis estupendos y estupendas, y si no, no pasa nada, es mejor eso que morirse.",
     author: "@MrTioTizo",
     kind: "ChatBubble",
-    kid: "buenasgracias",
+    id: "buenasgracias",
   },
   {
     // Custom designed, doesn't need additional parameters
