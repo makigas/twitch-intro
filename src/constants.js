@@ -60,15 +60,37 @@ export const POPUPS = [
     id: "tiempotiempo",
   },
   {
+    text: "11",
+    author: "@dannywolfmx2",
+    kind: "ChatBubble",
+    id: "once",
+  },
+  {
     text: "Buenas gracias y muchas tardes. Espero esteis estupendos y estupendas, y si no, no pasa nada, es mejor eso que morirse.",
     author: "@MrTioTizo",
     kind: "ChatBubble",
     id: "buenasgracias",
   },
   {
+    text: "Atención: Todo aquel que no canjee la recompensa de fichar será fulminado",
+    author: "@frostqui",
+    kind: "ChatBubble",
+    id: "ficharplz",
+  },
+  {
     // Custom designed, doesn't need additional parameters
     kind: "BoardPopup",
     id: "motherboards",
+  },
+  {
+    // Custom designed, doesn't need additional parameters
+    kind: "PatitaPopup",
+    id: "patita",
+  },
+  {
+    // Custom designed, doesn't need additional parameters
+    kind: "KiwiBsod",
+    id: "kiwibsod",
   },
 ];
 
