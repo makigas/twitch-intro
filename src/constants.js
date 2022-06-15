@@ -24,7 +24,12 @@ export const STATUSES = [
   "Reparando el condensador de fluzo... -- @frostqui",
   "Liberando a clank del mundo de las tinieblas... -- @frostqui",
   "Preparando la música de m****a sin copyright... -- @frostqui",
-  
+  "Buscando frameworks raros para enseñarlos en directo... -- @frostqui",
+  "Yendo al río a llenar garrafas para las recompensas del canal... -- @frostqui",
+
+  // jemmaengz1202
+  "Canjeando subs por kiwis y sandías... -- @jemmaengz1202",
+
   // @ivan_the_raging_python
   "Huyendo de LatAm... -- @ivan_the_raging_python",
 ];
