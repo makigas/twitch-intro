@@ -3,6 +3,7 @@
   import ChatBubble from "./ChatBubble.svelte";
   import BoardPopup from "./BoardPopup.svelte";
   import Patita from "./Patita.svelte";
+  import Mandarina from "./Mandarina.svelte";
   import KiwiBsod from "./KiwiBsod.svelte";
   import { POPUPS, SECONDS_BETWEEN_POPUPS } from "../constants";
 
@@ -29,12 +30,14 @@
 
 <g>
   {#if current != null}
-    {#if current.kind === "BreakingNews"}
+    {#if current.kind === "Mandarina"}
+      <Mandarina on:done={next} />
+    {:else if current.kind === "BreakingNews"}
       <BreakingNews on:done={next} author={current.author}
         >{current.text}</BreakingNews
       >
     {:else if current.kind === "KiwiBsod"}
-      <KiwiBsod />
+      <KiwiBsod on:done={next} />
     {:else if current.kind === "ChatBubble"}
       <ChatBubble on:done={next} author={current.author}
         >{current.text}</ChatBubble

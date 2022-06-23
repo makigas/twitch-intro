@@ -92,8 +92,13 @@ export const POPUPS = [
     kind: "KiwiBsod",
     id: "kiwibsod",
   },
+  {
+    // Custom designed, doesn't need additional parameters
+    kind: "Mandarina",
+    id: "mandarina",
+  },
 ];
 
-export const SECONDS_BETWEEN_POPUPS = 70;
+export const SECONDS_BETWEEN_POPUPS = 45;
 
 export const COUNTDOWN_MINUTES = 8;
