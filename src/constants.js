@@ -32,6 +32,9 @@ export const STATUSES = [
 
   // @ivan_the_raging_python
   "Huyendo de LatAm... -- @ivan_the_raging_python",
+  
+  // @mauriballes
+  "Compilando el kernel Linux... otra vez -- @mauriballes",
 ];
 
 export const POPUPS = [
