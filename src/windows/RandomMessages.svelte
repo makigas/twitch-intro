@@ -5,6 +5,7 @@
   import Patita from "./Patita.svelte";
   import Mandarina from "./Mandarina.svelte";
   import KiwiBsod from "./KiwiBsod.svelte";
+  import Farm from "./Farm.svelte";
   import { POPUPS, SECONDS_BETWEEN_POPUPS } from "../constants";
 
   let popups = [...POPUPS];
@@ -36,6 +37,8 @@
       <BreakingNews on:done={next} author={current.author}
         >{current.text}</BreakingNews
       >
+    {:else if current.kind === "Farm"}
+      <Farm on:done={next} {...current} />
     {:else if current.kind === "KiwiBsod"}
       <KiwiBsod on:done={next} />
     {:else if current.kind === "ChatBubble"}

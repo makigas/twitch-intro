@@ -100,6 +100,22 @@ export const POPUPS = [
     kind: "Mandarina",
     id: "mandarina",
   },
+  {
+    kind: "Farm",
+    title: "Sandía",
+    id: "sandia",
+    line1:
+      "Este es dannywolfmx2. dannywolfmx2 madruga cada día para que puedas encontrar las sandías más frescas de todo el mercado",
+    line2: "Compra calidad. Compra sandías dannywolfmx2",
+  },
+  {
+    kind: "Farm",
+    title: "Pollo",
+    id: "pollo",
+    line1:
+      "Este es ckmu32. ckmu32 madruga cada día para que puedas encontrar los pollos mejor alimentados de todo el mercado",
+    line2: "Compra calidad. Compra pollos ckmu32",
+  },
 ];
 
 export const SECONDS_BETWEEN_POPUPS = 45;

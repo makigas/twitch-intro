@@ -4,6 +4,7 @@
   import FlyingArrow from "../components/FlyingArrow.svelte";
   const dispatch = createEventDispatcher();
 
+  export let duration = 8000;
   export let title, x, y, width, height;
 
   let showArrow = false;
@@ -20,7 +21,7 @@
   let interval;
   $: {
     clearInterval(interval);
-    interval = setTimeout(() => (showArrow = true), 8000);
+    interval = setTimeout(() => (showArrow = true), parseInt(duration));
   }
 </script>
 
