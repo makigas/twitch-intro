@@ -35,6 +35,9 @@ export const STATUSES = [
   
   // @mauriballes
   "Compilando el kernel Linux... otra vez -- @mauriballes",
+  
+  // @Klairm_
+  "Calmando wannabes... -- @Klairm_",
 ];
 
 export const POPUPS = [
