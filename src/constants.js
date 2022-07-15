@@ -104,6 +104,11 @@ export const POPUPS = [
     id: "mandarina",
   },
   {
+    // Custom designed, doesn't need additional parameters
+    kind: "Bun",
+    id: "bun",
+  },
+  {
     kind: "Farm",
     title: "Sandía",
     id: "sandia",

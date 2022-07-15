@@ -6,6 +6,7 @@
   import Mandarina from "./Mandarina.svelte";
   import KiwiBsod from "./KiwiBsod.svelte";
   import Farm from "./Farm.svelte";
+  import Bun from "./Bun.svelte";
   import { POPUPS, SECONDS_BETWEEN_POPUPS } from "../constants";
 
   let popups = [...POPUPS];
@@ -31,7 +32,9 @@
 
 <g>
   {#if current != null}
-    {#if current.kind === "Mandarina"}
+    {#if current.kind === "Bun" }
+      <Bun on:done={next} />
+    {:else if current.kind === "Mandarina"}
       <Mandarina on:done={next} />
     {:else if current.kind === "BreakingNews"}
       <BreakingNews on:done={next} author={current.author}
