@@ -72,7 +72,7 @@ export const POPUPS = [
     id: "once",
   },
   {
-    text: "Buenas gracias y muchas tardes. Espero esteis estupendos y estupendas, y si no, no pasa nada, es mejor eso que morirse.",
+    text: "Buenas gracias y muchas tardes, espero esteis estupendos y estupendas.",
     author: "@MrTioTizo",
     kind: "ChatBubble",
     id: "buenasgracias",
