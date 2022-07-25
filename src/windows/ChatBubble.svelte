@@ -1,6 +1,6 @@
 <script>
   import CloseableWindow from "../components/CloseableWindow.svelte";
-  export let author;
+  export let author, text;
 </script>
 
 <CloseableWindow
@@ -34,7 +34,7 @@
       style="color: black; font-size: 1.2em"
       xmlns="http://www.w3.org/1999/xhtml"
     >
-      <slot />
+      {text}
     </div>
   </foreignObject>
 </CloseableWindow>

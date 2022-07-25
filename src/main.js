@@ -1,11 +1,8 @@
 import "./assets/global.css";
-import App from "./StartingSoonCountdown.svelte";
+import StartingSoonCountdown from "./StartingSoonCountdown.svelte";
 
-const app = new App({
+const app = new StartingSoonCountdown({
   target: document.body,
-  props: {
-    name: "world",
-  },
 });
 
 export default app;

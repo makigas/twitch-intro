@@ -39,6 +39,8 @@ En la carpeta `src/components` están los componentes reusables:
 En la carpeta `src/windows` están las distintas ventanas, algunas reusables
 y otras no.
 
+Para depurar todas las ventanas hay que utilizar la vista /debug.html.
+
 - StreamStarting: es la ventana que muestra la cuenta atrás.
 
 ## Cómo proponer frases
