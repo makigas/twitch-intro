@@ -1,3 +1,4 @@
+import "./assets/global.css";
 import App from "./StartingSoonCountdown.svelte";
 
 const app = new App({
