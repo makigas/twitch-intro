@@ -1,4 +1,5 @@
 <script>
+  import farm from "../assets/images/farmer.jpg";
   import CloseableWindow from "../components/CloseableWindow.svelte";
 
   export let title, line1, line2;
@@ -13,7 +14,7 @@
   duration={15000}
   {title}
 >
-  <image x="0%" width="100%" class="bg" href="images/farmer.jpg" />
+  <image x="0%" width="100%" class="bg" href={farm} />
   <foreignObject fill="black" x="20" y="50" width="250" height="300">
     <div
       style="color: white; font-weight: bold; text-shadow: 0 0 4px black; background: rgba(0, 0, 0, 0.5); font-size: 1.1em;"

@@ -156,7 +156,4 @@
     stroke: #5bad64;
     stroke-width: 5;
   }
-  .button .dog {
-    fill: black;
-  }
 </style>

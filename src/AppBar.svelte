@@ -1,4 +1,8 @@
 <script>
+  import volume from "./assets/audio-volume-high-symbolic.svg";
+  import network from "./assets/network-wireless-symbolic.svg";
+  import shutdown from "./assets/system-shutdown-symbolic.svg";
+
   function computeTime() {
     let date = new Date();
     return date.toLocaleString("es-ES");
@@ -41,21 +45,21 @@
   <g class="symbolics">
     <g class="symbolicsInner" transform="translate(-75,0)">
       <image
-        href="adwaita/network-wireless-symbolic.svg"
+        href={network}
         fill="white"
         x="0"
         width="15"
         height="15"
       />
       <image
-        href="adwaita/audio-volume-high-symbolic.svg"
+        href={volume}
         fill="white"
         x="25"
         width="15"
         height="15"
       />
       <image
-        href="adwaita/system-shutdown-symbolic.svg"
+        href={shutdown}
         fill="white"
         x="50"
         width="15"

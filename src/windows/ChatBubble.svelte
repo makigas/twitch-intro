@@ -1,4 +1,5 @@
 <script>
+  import chat from "../assets/chat-symbolic.svg";
   import CloseableWindow from "../components/CloseableWindow.svelte";
   export let author, text;
 </script>
@@ -14,7 +15,7 @@
   <g class="icon">
     <rect x="30" y="80" width="100" height="100" fill="#26a269" rx="5" ry="5" />
     <image
-      href="adwaita/chat-symbolic.svg"
+      href={chat}
       x="40"
       y="90"
       width="80"

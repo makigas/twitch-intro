@@ -1,4 +1,6 @@
 <script>
+  import cross from "../assets/cross-symbolic.svg";
+  
   export let hide, x, y, width, height;
   export let title;
   let ready = false;
@@ -34,7 +36,7 @@
           height="20"
           x="-30"
           y="10"
-          href="adwaita/cross-symbolic.svg"
+          href={cross}
         />
       </g>
       <line

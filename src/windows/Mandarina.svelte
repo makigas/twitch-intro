@@ -1,5 +1,6 @@
 <script>
   import CloseableWindow from "../components/CloseableWindow.svelte";
+  import mandarina from "../assets/images/commons_mandarina.jpg";
 </script>
 
 <CloseableWindow
@@ -16,7 +17,7 @@
       x="0%"
       width="100%"
       class="pan"
-      href="images/commons_mandarina.jpg"
+      href={mandarina}
     />
   </g>
   <g class="text">

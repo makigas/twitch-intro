@@ -1,4 +1,6 @@
 <script>
+  import pointer from "../assets/left_ptr.png";
+
   import { createEventDispatcher } from "svelte";
   export let x, y;
   export let from, to;
@@ -29,7 +31,7 @@
     style={`--fly-from: ${from}; --fly-to: ${to}`}
     on:animationend={animate}
     class={className}
-    href="adwaita/left_ptr.png"
+    href={pointer}
     x="0"
     y="0"
     width="48"

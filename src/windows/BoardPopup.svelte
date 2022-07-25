@@ -1,5 +1,14 @@
 <script>
-  import CloseableWindow from "../components/CloseableWindow.svelte";
+  import board1 from "../assets/motherboards/sample1.jpg";
+  import board2 from "../assets/motherboards/sample2.jpg";
+  import board3 from "../assets/motherboards/sample3.jpg";
+  import board4 from "../assets/motherboards/sample4.jpg";
+  import board5 from "../assets/motherboards/sample5.jpg";
+  import board6 from "../assets/motherboards/sample6.jpg";
+  import board7 from "../assets/motherboards/sample7.jpg";
+  import board8 from "../assets/motherboards/sample8.jpg";
+
+import CloseableWindow from "../components/CloseableWindow.svelte";
 </script>
 
 <CloseableWindow
@@ -12,14 +21,14 @@
 >
   <rect x="0" y="0" width="100%" height="100%" fill="#903030" />
   <g class="flying">
-    <image x="75%" y="50%" href="motherboards/sample1.jpg" />
-    <image x="33%" y="15%" href="motherboards/sample2.jpg" />
-    <image x="65%" y="22%" href="motherboards/sample3.jpg" />
-    <image x="15%" y="76%" href="motherboards/sample4.jpg" />
-    <image x="44%" y="50%" href="motherboards/sample5.jpg" />
-    <image x="12%" y="23%" href="motherboards/sample6.jpg" />
-    <image x="27%" y="93%" href="motherboards/sample7.jpg" />
-    <image x="51%" y="15%" href="motherboards/sample8.jpg" />
+    <image x="75%" y="50%" href={board1} />
+    <image x="33%" y="15%" href={board2} />
+    <image x="65%" y="22%" href={board3} />
+    <image x="15%" y="76%" href={board4} />
+    <image x="44%" y="50%" href={board5} />
+    <image x="12%" y="23%" href={board6} />
+    <image x="27%" y="93%" href={board7} />
+    <image x="51%" y="15%" href={board8} />
   </g>
   <g class="text">
     <text

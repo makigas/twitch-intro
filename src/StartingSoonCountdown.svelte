@@ -1,4 +1,9 @@
 <script>
+  import hourglass from "./assets/hourglass-symbolic.svg";
+  import youtube from "./assets/icons/youtube.svg";
+  import discord from "./assets/icons/discord.svg";
+  import twitter from "./assets/icons/twitter.svg";
+
   import Desktop from "./Desktop.svelte";
   import RandomMessages from "./windows/RandomMessages.svelte";
   import StreamStarting from "./windows/StreamStarting.svelte";
@@ -26,27 +31,27 @@
         symbolic
         x="10"
         y="50"
-        icon="icons/youtube.svg"
+        icon={youtube}
         text="/makigas"
       />
       <DesktopIcon
         symbolic
         x="10"
         y="150"
-        icon="icons/discord.svg"
+        icon={discord}
         text="/Mq7TBAB"
       />
       <DesktopIcon
         symbolic
         x="10"
         y="250"
-        icon="icons/twitter.svg"
+        icon={twitter}
         text="@makigas"
       />
       <DesktopIcon
         x="450"
         y="150"
-        icon="adwaita/hourglass-symbolic.svg"
+        icon={hourglass}
         text="Iniciar stream"
       />
       {#if ready}
