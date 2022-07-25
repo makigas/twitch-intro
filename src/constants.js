@@ -60,6 +60,12 @@ export const POPUPS = [
     id: "eeeeeeeeeee",
   },
   {
+    text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
+    author: "@UnPayasoConUnMachete",
+    kind: "BreakingNews",
+    id: "good-news-for-you",
+  },
+  {
     text: "El tiempo es como el dinero, mientras menos se tiene más se valora",
     author: "@dannywolfmx2",
     kind: "ChatBubble",
