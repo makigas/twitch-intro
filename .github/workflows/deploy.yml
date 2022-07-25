@@ -1,5 +1,4 @@
 ---
-
 name: Deploy to GH Pages
 on:
   push:

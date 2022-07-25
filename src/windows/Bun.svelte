@@ -2,14 +2,7 @@
   import CloseableWindow from "../components/CloseableWindow.svelte";
 </script>
 
-<CloseableWindow
-  on:done
-  x="50"
-  y="250"
-  width="800"
-  height="160"
-  title="BUN"
->
+<CloseableWindow on:done x="50" y="250" width="800" height="160" title="BUN">
   <rect x="0" y="0" width="100%" height="100%" fill="#202020" />
   <g class="text">
     <text

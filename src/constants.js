@@ -10,7 +10,7 @@ export const STATUSES = [
   "BAD SECTOR -- @dannywolfmx2",
   "Sacando a pasear al lobete... -- @dannywolfmx2",
   "Recargándole las pilas a Pinchito... -- @dannywolfmx2",
-  
+
   // @ikanian
   "Almacenando patos de emergencia... -- @ikanian",
 
@@ -32,10 +32,10 @@ export const STATUSES = [
 
   // @ivan_the_raging_python
   "Huyendo de LatAm... -- @ivan_the_raging_python",
-  
+
   // @mauriballes
   "Compilando el kernel Linux... otra vez -- @mauriballes",
-  
+
   // @Klairm_
   "Calmando wannabes... -- @Klairm_",
 ];

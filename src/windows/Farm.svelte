@@ -1,6 +1,6 @@
 <script>
   import CloseableWindow from "../components/CloseableWindow.svelte";
-  
+
   export let title, line1, line2;
 </script>
 
@@ -12,7 +12,7 @@
   height="250"
   duration={15000}
   {title}
-  >
+>
   <image x="0%" width="100%" class="bg" href="images/farmer.jpg" />
   <foreignObject fill="black" x="20" y="50" width="250" height="300">
     <div

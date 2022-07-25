@@ -12,7 +12,12 @@
 >
   <rect x="0" y="0" width="100%" height="100%" fill="#903030" />
   <g class="mandarina">
-    <image x="0%" width="100%" class="pan" href="images/commons_mandarina.jpg" />
+    <image
+      x="0%"
+      width="100%"
+      class="pan"
+      href="images/commons_mandarina.jpg"
+    />
   </g>
   <g class="text">
     <text

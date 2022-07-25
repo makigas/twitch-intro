@@ -32,7 +32,7 @@
 
 <g>
   {#if current != null}
-    {#if current.kind === "Bun" }
+    {#if current.kind === "Bun"}
       <Bun on:done={next} />
     {:else if current.kind === "Mandarina"}
       <Mandarina on:done={next} />
