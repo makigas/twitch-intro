@@ -124,6 +124,20 @@ export const POPUPS = [
       "Este es ckmu32. ckmu32 madruga cada día para que puedas encontrar los pollos mejor alimentados de todo el mercado",
     line2: "Compra calidad. Compra pollos ckmu32",
   },
+  {
+    kind: "DrinkReminder",
+    title: "Café",
+    id: "coffee-drink-reminder",
+    person: "@mauriballes",
+    emoji: "☕",
+  },
+  {
+    kind: "DrinkReminder",
+    title: "Té",
+    id: "tea-drink-reminder",
+    person: "@ckmu32",
+    emoji: "🍵",
+  },
 ];
 
 export const SECONDS_BETWEEN_POPUPS = 45;

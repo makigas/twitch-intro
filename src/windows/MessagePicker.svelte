@@ -11,10 +11,12 @@
   import Farm from "./Farm.svelte";
   import Bun from "./Bun.svelte";
   import PatitaPopup from "./Patita.svelte";
+  import DrinkReminder from "./DrinkReminder.svelte";
 
   const elements = {
     BreakingNews,
     ChatBubble,
+    DrinkReminder,
     BoardPopup,
     Mandarina,
     KiwiBsod,
