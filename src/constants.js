@@ -48,6 +48,12 @@ export const POPUPS = [
     id: "use-emacs",
   },
   {
+    text: "Si tu teclado se ha Rusteado. Tranquilos! usa Don Dennis Ritchie, C limpiara porque la Pythhonisa solo hace tocar la flauta",
+    author: "@messer199",
+    kind: "BreakingNews",
+    id: "rusty-keyboard",
+  },
+  {
     text: "lerna.js ha muerto",
     author: "@frostqui",
     kind: "BreakingNews",
