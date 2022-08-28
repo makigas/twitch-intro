@@ -19,6 +19,7 @@ export const STATUSES = [
 
   // @messer199
   "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
+  "Sacudiendo los enanos... -- @messer199",
 
   // @frostqui
   "Reparando el condensador de fluzo... -- @frostqui",
