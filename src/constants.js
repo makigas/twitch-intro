@@ -67,6 +67,12 @@ export const POPUPS = [
     id: "eeeeeeeeeee",
   },
   {
+    text: "Un ruso con xanclas? Mas bien un ruso wannabe",
+    author: "@Klairm_",
+    kind: "ChatBubble",
+    id: "rusowannabe",
+  },
+  {
     text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
     author: "@UnPayasoConUnMachete",
     kind: "BreakingNews",
