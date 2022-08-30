@@ -30,6 +30,9 @@ export const STATUSES = [
 
   // jemmaengz1202
   "Canjeando subs por kiwis y sandías... -- @jemmaengz1202",
+  
+  // sonirico
+  "Atornillando bits... -- @sonirico",
 
   // @ivan_the_raging_python
   "Huyendo de LatAm... -- @ivan_the_raging_python",
