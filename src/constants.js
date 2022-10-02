@@ -76,6 +76,12 @@ export const POPUPS = [
     id: "rusowannabe",
   },
   {
+    text: "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
+    author: "@messer199",
+    kind: "ChatBubble",
+    id: "elasticsearch",
+  },
+  {
     text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
     author: "@UnPayasoConUnMachete",
     kind: "BreakingNews",
