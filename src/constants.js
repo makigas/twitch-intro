@@ -30,7 +30,7 @@ export const STATUSES = [
 
   // jemmaengz1202
   "Canjeando subs por kiwis y sandías... -- @jemmaengz1202",
-  
+
   // sonirico
   "Atornillando bits... -- @sonirico",
 
@@ -39,6 +39,7 @@ export const STATUSES = [
 
   // @mauriballes
   "Compilando el kernel Linux... otra vez -- @mauriballes",
+  "Levantando servidores! -- @mauriballes",
 
   // @Klairm_
   "Calmando wannabes... -- @Klairm_",
@@ -76,10 +77,22 @@ export const POPUPS = [
     id: "rusowannabe",
   },
   {
+    text: "Necesitas insomio para esta noche de crunch? Bill Puertas te trae café de la isla de Java, su opinión sobrerana es la siguiente: Java no me deja dormir por las noches. No apto por cardiopaticos",
+    author: "@messer199",
+    kind: "ChatBubble",
+    id: "javasleep",
+  },
+  {
     text: "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
     author: "@messer199",
     kind: "ChatBubble",
     id: "elasticsearch",
+  },
+  {
+    text: "Servidores en llamas!!! Panic Everywhere!!!",
+    author: "@mauriballes",
+    kind: "BreakingNews",
+    id: "panicserver",
   },
   {
     text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
