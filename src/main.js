@@ -1,3 +1,5 @@
+import "@fontsource/bad-script";
+import "@fontsource/cantarell";
 import "./assets/global.css";
 import StartingSoonCountdown from "./StartingSoonCountdown.svelte";
 
