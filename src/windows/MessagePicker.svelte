@@ -10,6 +10,7 @@
   import KiwiBsod from "./KiwiBsod.svelte";
   import Farm from "./Farm.svelte";
   import Bun from "./Bun.svelte";
+  import Corporate from "./Corporate.svelte";
   import PatitaPopup from "./Patita.svelte";
   import DrinkReminder from "./DrinkReminder.svelte";
 
@@ -21,6 +22,7 @@
     Mandarina,
     KiwiBsod,
     Farm,
+    Corporate,
     Bun,
     PatitaPopup,
   };

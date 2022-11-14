@@ -20,6 +20,7 @@ export const STATUSES = [
   // @messer199
   "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
   "Sacudiendo los enanos... -- @messer199",
+  "Redireccionando trafico nopor a este stream... -- @messer199",
 
   // @frostqui
   "Reparando el condensador de fluzo... -- @frostqui",
@@ -179,6 +180,11 @@ export const POPUPS = [
     person: "@ckmu32",
     emoji: "🍵",
   },
+  {
+    kind: "Corporate",
+    title: '<?xml version="1.0" ?>',
+    id: "xml",
+  }
 ];
 
 export const SECONDS_BETWEEN_POPUPS = 45;
