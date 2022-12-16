@@ -44,6 +44,9 @@ export const STATUSES = [
 
   // @Klairm_
   "Calmando wannabes... -- @Klairm_",
+  
+  // @MrTioTizo
+  "Contando bits y bocabits.. -- @MrTioTizo",
 ];
 
 export const POPUPS = [
