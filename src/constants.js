@@ -108,6 +108,12 @@ export const POPUPS = [
     id: "tiempotiempo",
   },
   {
+    text: "Esta tarjeta es en color negro y solo aparece en los viernes para decir que es una tarjeta blackfriday, porque los descuento son una patraña irrespetuoso con el medio ambiente",
+    author: "@messer199",
+    kind: "ChatBubble",
+    id: "blackfriday",
+  },
+  {
     text: "11",
     author: "@dannywolfmx2",
     kind: "ChatBubble",
