@@ -47,6 +47,7 @@ export const STATUSES = [
   
   // @MrTioTizo
   "Contando bits y bocabits.. -- @MrTioTizo",
+  "Preparando la cena de empresa del año que viene... (aunque cene solo) -- @MrTioTizo",
 ];
 
 export const POPUPS = [
