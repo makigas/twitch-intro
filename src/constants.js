@@ -16,6 +16,7 @@ export const STATUSES = [
 
   // @ckmu32
   "Preparando el nuevo año de Java en YouTube... -- @ckmu32",
+  "Comiendo mandarinas... (esa vitamina C no se conseguir sola) -- @ckmu32",
 
   // @messer199
   "Preparando el curso de Scala... es coña, antes sale HL3 -- @messer199",
@@ -54,6 +55,9 @@ export const STATUSES = [
   
   // @likendero
   "Parseando XML... -- @likendero",
+  
+  // @jesucristo_de_nazareth
+  "Bajando desde cielo al stream... -- @jesucristo_de_nazareth",
 ];
 
 export const POPUPS = [
