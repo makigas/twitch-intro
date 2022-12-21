@@ -1,12 +1,12 @@
 export const STATUSES = [
-  // @danirod_º
+  // @danirod_
   "Montando el disco duro de los memes...",
   "Sacando brillo a los teclados...",
   "Desfragmentando un kiwi...",
   "Actualizando el entorno gráfico...",
   "Acariciando patos...",
 
-  // @dannywolfx2
+  // @dannywolfmx2
   "BAD SECTOR -- @dannywolfmx2",
   "Sacando a pasear al lobete... -- @dannywolfmx2",
   "Recargándole las pilas a Pinchito... -- @dannywolfmx2",
