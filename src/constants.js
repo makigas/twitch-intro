@@ -48,6 +48,12 @@ export const STATUSES = [
   // @MrTioTizo
   "Contando bits y bocabits.. -- @MrTioTizo",
   "Preparando la cena de empresa del año que viene... (aunque cene solo) -- @MrTioTizo",
+  
+  // @adrianiku
+  "Liando porros ,muchos porros... -- @adrianiku",
+  
+  // @likendero
+  "Parseando XML... -- @likendero",
 ];
 
 export const POPUPS = [
