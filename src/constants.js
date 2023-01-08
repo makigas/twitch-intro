@@ -45,106 +45,94 @@ export const STATUSES = [
 
   // @Klairm_
   "Calmando wannabes... -- @Klairm_",
-  
+
   // @MrTioTizo
   "Contando bits y bocabits.. -- @MrTioTizo",
   "Preparando la cena de empresa del año que viene... (aunque cene solo) -- @MrTioTizo",
-  
+
   // @adrianiku
   "Liando porros ,muchos porros... -- @adrianiku",
-  
+
   // @likendero
   "Parseando XML... -- @likendero",
-  
+
   // @jesucristo_de_nazareth
   "Bajando desde cielo al stream... -- @jesucristo_de_nazareth",
 ];
 
-export const POPUPS = [
+export const NEWS = [
   {
     text: "Expertos en ciberseguridad recomiendan usar Emacs y Nano hasta nuevo aviso por vulnerabilidad encontrada en Vim",
     author: "@messer199",
-    kind: "BreakingNews",
-    id: "use-emacs",
   },
   {
     text: "Si tu teclado se ha Rusteado. Tranquilos! usa Don Dennis Ritchie, C limpiara porque la Pythhonisa solo hace tocar la flauta",
     author: "@messer199",
-    kind: "BreakingNews",
-    id: "rusty-keyboard",
   },
   {
     text: "lerna.js ha muerto",
     author: "@frostqui",
-    kind: "BreakingNews",
-    id: "lerna-ded",
-  },
-  {
-    text: "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
-    author: "@frostqui",
-    kind: "ChatBubble",
-    id: "eeeeeeeeeee",
-  },
-  {
-    text: "Un ruso con xanclas? Mas bien un ruso wannabe",
-    author: "@Klairm_",
-    kind: "ChatBubble",
-    id: "rusowannabe",
-  },
-  {
-    text: "Necesitas insomio para esta noche de crunch? Bill Puertas te trae café de la isla de Java, su opinión sobrerana es la siguiente: Java no me deja dormir por las noches. No apto por cardiopaticos",
-    author: "@messer199",
-    kind: "ChatBubble",
-    id: "javasleep",
-  },
-  {
-    text: "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
-    author: "@messer199",
-    kind: "ChatBubble",
-    id: "elasticsearch",
   },
   {
     text: "Servidores en llamas!!! Panic Everywhere!!!",
     author: "@mauriballes",
-    kind: "BreakingNews",
-    id: "panicserver",
   },
   {
     text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
     author: "@UnPayasoConUnMachete",
-    kind: "BreakingNews",
-    id: "good-news-for-you",
+  },
+];
+
+export const BUBBLES = [
+  {
+    text: "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
+    author: "@frostqui",
+  },
+  {
+    text: "Un ruso con xanclas? Mas bien un ruso wannabe",
+    author: "@Klairm_",
+  },
+  {
+    text: "Necesitas insomio para esta noche de crunch? Bill Puertas te trae café de la isla de Java, su opinión sobrerana es la siguiente: Java no me deja dormir por las noches. No apto por cardiopaticos",
+    author: "@messer199",
+  },
+  {
+    text: "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
+    author: "@messer199",
   },
   {
     text: "El tiempo es como el dinero, mientras menos se tiene más se valora",
     author: "@dannywolfmx2",
-    kind: "ChatBubble",
-    id: "tiempotiempo",
   },
   {
     text: "Esta tarjeta es en color negro y solo aparece en los viernes para decir que es una tarjeta blackfriday, porque los descuento son una patraña irrespetuoso con el medio ambiente",
     author: "@messer199",
-    kind: "ChatBubble",
-    id: "blackfriday",
   },
   {
     text: "11",
     author: "@dannywolfmx2",
-    kind: "ChatBubble",
-    id: "once",
   },
   {
     text: "Buenas gracias y muchas tardes, espero esteis estupendos y estupendas.",
     author: "@MrTioTizo",
-    kind: "ChatBubble",
-    id: "buenasgracias",
   },
   {
     text: "Atención: Todo aquel que no canjee la recompensa de fichar será fulminado",
     author: "@frostqui",
-    kind: "ChatBubble",
-    id: "ficharplz",
   },
+];
+
+export const POPUPS = [
+  ...BUBBLES.map((bubble, i) => ({
+    ...bubble,
+    kind: "ChatBubble",
+    id: `chat-bubble-${i}`,
+  })),
+  ...NEWS.map((news, i) => ({
+    ...news,
+    kind: "BreakingNews",
+    id: `breaking-news-${i}`,
+  })),
   {
     // Custom designed, doesn't need additional parameters
     kind: "BoardPopup",
@@ -204,7 +192,7 @@ export const POPUPS = [
     kind: "Corporate",
     title: '<?xml version="1.0" ?>',
     id: "xml",
-  }
+  },
 ];
 
 export const SECONDS_BETWEEN_POPUPS = 45;
