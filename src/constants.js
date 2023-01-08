@@ -60,75 +60,72 @@ export const STATUSES = [
   "Bajando desde cielo al stream... -- @jesucristo_de_nazareth",
 ];
 
-export const NEWS = [
-  {
-    text: "Expertos en ciberseguridad recomiendan usar Emacs y Nano hasta nuevo aviso por vulnerabilidad encontrada en Vim",
-    author: "@messer199",
-  },
-  {
-    text: "Si tu teclado se ha Rusteado. Tranquilos! usa Don Dennis Ritchie, C limpiara porque la Pythhonisa solo hace tocar la flauta",
-    author: "@messer199",
-  },
-  {
-    text: "lerna.js ha muerto",
-    author: "@frostqui",
-  },
-  {
-    text: "Servidores en llamas!!! Panic Everywhere!!!",
-    author: "@mauriballes",
-  },
-  {
-    text: "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
-    author: "@UnPayasoConUnMachete",
-  },
-];
+export const NEWS = {
+  "@messer199": [
+    "Expertos en ciberseguridad recomiendan usar Emacs y Nano hasta nuevo aviso por vulnerabilidad encontrada en Vim",
+    "Si tu teclado se ha Rusteado. Tranquilos! usa Don Dennis Ritchie, C limpiara porque la Pythhonisa solo hace tocar la flauta",
+  ],
+  "@frostqui": [
+    "lerna.js ha muerto"
+  ],
+  "@mauriballes": [
+    "Servidores en llamas!!! Panic Everywhere!!!"
+  ],
+  "@UnPayasoConUnMachete": [
+    "¡Tengo buenas noticias para ti! PHP sigue mejorando cada año, y te invito a que le eches un vistazo antes de opinar",
+  ],
+};
 
-export const BUBBLES = [
-  {
-    text: "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
-    author: "@frostqui",
-  },
-  {
-    text: "Un ruso con xanclas? Mas bien un ruso wannabe",
-    author: "@Klairm_",
-  },
-  {
-    text: "Necesitas insomio para esta noche de crunch? Bill Puertas te trae café de la isla de Java, su opinión sobrerana es la siguiente: Java no me deja dormir por las noches. No apto por cardiopaticos",
-    author: "@messer199",
-  },
-  {
-    text: "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
-    author: "@messer199",
-  },
-  {
-    text: "El tiempo es como el dinero, mientras menos se tiene más se valora",
-    author: "@dannywolfmx2",
-  },
-  {
-    text: "Esta tarjeta es en color negro y solo aparece en los viernes para decir que es una tarjeta blackfriday, porque los descuento son una patraña irrespetuoso con el medio ambiente",
-    author: "@messer199",
-  },
-  {
-    text: "11",
-    author: "@dannywolfmx2",
-  },
-  {
-    text: "Buenas gracias y muchas tardes, espero esteis estupendos y estupendas.",
-    author: "@MrTioTizo",
-  },
-  {
-    text: "Atención: Todo aquel que no canjee la recompensa de fichar será fulminado",
-    author: "@frostqui",
-  },
-];
+export const BUBBLES = {
+  "@frostqui": [
+    "Escribe eeeeeeeeeeeeeeeee en el chat cuando leas este mensaje",
+    "Atención: Todo aquel que no canjee la recompensa de fichar será fulminado",
+  ],
+  "@Klairm_": [
+    "Un ruso con xanclas? Mas bien un ruso wannabe"
+  ],
+  "@messer199": [
+    "Necesitas insomio para esta noche de crunch? Bill Puertas te trae café de la isla de Java, su opinión sobrerana es la siguiente: Java no me deja dormir por las noches. No apto por cardiopaticos",
+    "Hay dos cosas peores que un agujero negro: Google Chrome y ElasticSearch",
+    "Esta tarjeta es en color negro y solo aparece en los viernes para decir que es una tarjeta blackfriday, porque los descuento son una patraña irrespetuoso con el medio ambiente",
+  ],
+  "@dannywolfmx2": [
+    "El tiempo es como el dinero, mientras menos se tiene más se valora",
+    "11",
+    "Tonacho programador de Rust",
+    "Stallman programador de Excel. ",
+    "Uriel jugador de COD",
+    "DannyWolf pesetero",
+  ],
+  "@MrTioTizo": [
+    "Buenas gracias y muchas tardes, espero esteis estupendos y estupendas.",
+  ],
+  "@hellsing2030": [
+    "🦆🦆 PATASTICO 🦆🦆"
+  ],
+  "@leo_develop": [
+    "No te olvides de poner el WHERE en el DELETE * FROM"
+  ],
+  "@zyryab_dev": [
+    "Si la ves, que no la verás, no le digas que venga, que no vendrá",
+  ],
+};
+
+function unroll(index) {
+  const items = [];
+  Object.entries(index).forEach(([username, messages]) => {
+    messages.forEach((msg) => items.push({ author: username, text: msg }));
+  });
+  return items;
+}
 
 export const POPUPS = [
-  ...BUBBLES.map((bubble, i) => ({
+  ...unroll(BUBBLES).map((bubble, i) => ({
     ...bubble,
     kind: "ChatBubble",
     id: `chat-bubble-${i}`,
   })),
-  ...NEWS.map((news, i) => ({
+  ...unroll(NEWS).map((news, i) => ({
     ...news,
     kind: "BreakingNews",
     id: `breaking-news-${i}`,
