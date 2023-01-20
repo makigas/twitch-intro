@@ -27,33 +27,6 @@
 <main>
   <svg width="100%" height="100%" viewBox="0 0 960 540">
     <Desktop width="100%" height="100%" background="#264073">
-      <DesktopIcon
-        symbolic
-        x="10"
-        y="50"
-        icon={youtube}
-        text="/makigas"
-      />
-      <DesktopIcon
-        symbolic
-        x="10"
-        y="150"
-        icon={discord}
-        text="/Mq7TBAB"
-      />
-      <DesktopIcon
-        symbolic
-        x="10"
-        y="250"
-        icon={twitter}
-        text="@makigas"
-      />
-      <DesktopIcon
-        x="450"
-        y="150"
-        icon={hourglass}
-        text="Iniciar stream"
-      />
       {#if ready}
         <StreamStarting />
         <RandomMessages />
