@@ -27,6 +27,12 @@
 <main>
   <svg width="100%" height="100%" viewBox="0 0 960 540">
     <Desktop width="100%" height="100%" background="#264073">
+      <DesktopIcon
+        x="450"
+        y="150"
+        icon={hourglass}
+        text="Iniciar stream"
+      />
       {#if ready}
         <StreamStarting />
         <RandomMessages />
