@@ -1,0 +1,42 @@
+body {
+    background: black;
+}
+
+@keyframes spin {
+    from { transform: rotate(0); }
+    to { transform: rotate(359deg); }
+}
+
+@keyframes zoom {
+    60% { transform: scale(2); }
+    98% { opacity: 1; transform: scale(10); }
+    100% { transform: scale(20); opacity: 0; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.rotate {
+    animation: spin 5s linear infinite;
+}
+
+#stallman {
+    animation: zoom 50s ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
