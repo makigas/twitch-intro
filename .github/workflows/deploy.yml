@@ -15,7 +15,7 @@ jobs:
           npm ci
           npm run build -- --base=/twitch-intro/
       - name: Deploy to GH
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
           folder: dist
