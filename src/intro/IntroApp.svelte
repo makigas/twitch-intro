@@ -43,7 +43,7 @@
     </div>
   {:else if step == 3}
     <div transition:fade>
-      <Countdown minutes={7} />
+      <Countdown minutes={4} />
     </div>
   {/if}
 </div>
